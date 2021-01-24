@@ -26,6 +26,7 @@ func _ready():
 	var new_parasite = spawn_parasite(start_position)
 	parasite_controller.possess(new_parasite)
 	
+	
 func spawn_parasite(pos):
 	var new_parasite = preload("res://objects/actors/parasite/parasite.tscn").instance()
 	add_child(new_parasite)

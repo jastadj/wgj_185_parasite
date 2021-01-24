@@ -15,5 +15,9 @@ texture = ExtResource( 2 )
 [node name="npc" parent="." instance=ExtResource( 4 )]
 position = Vector2( 618.181, 389.966 )
 
+[node name="npc2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 813.469, 286.023 )
+rotation = 0.948145
+
 [node name="start_position" type="Node2D" parent="."]
 position = Vector2( 789.131, 473.762 )

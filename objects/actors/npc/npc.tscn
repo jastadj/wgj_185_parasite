@@ -4,12 +4,14 @@
 [ext_resource path="res://objects/actors/actor.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 30.5821, 11.4638 )
 
 [node name="npc" type="KinematicBody2D"]
 input_pickable = true
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1 )
 shape = SubResource( 1 )
 
 [node name="body" type="Sprite" parent="."]

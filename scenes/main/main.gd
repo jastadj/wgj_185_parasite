@@ -10,6 +10,7 @@ func _ready():
 	mouse_cursor_texture.create_from_image(mouse_cursor_image,0)
 	Input.set_custom_mouse_cursor(mouse_cursor_texture)
 	
+	Gamedata.new_game()
 	
 	# load level
 	get_tree().change_scene("res://scenes/levels/level01.tscn")

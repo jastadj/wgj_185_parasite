@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/mainui/energy/energy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ui/mainui/mainui.gd" type="Script" id=2]
+
+[node name="canvaslayer" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="mainui" type="Control" parent="."]
+margin_right = 764.0
+margin_bottom = 425.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="energy" parent="mainui" instance=ExtResource( 1 )]
+margin_left = 19.799
+margin_top = 25.4558
+margin_right = 19.799
+margin_bottom = 25.4558

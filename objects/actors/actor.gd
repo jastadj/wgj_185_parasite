@@ -23,8 +23,11 @@ func _physics_process(delta):
 			move_dir = Vector2(0,1).rotated(rotation + PI) * move_speed * delta
 		
 		move_and_slide(move_dir)
-		
 		possessed_by.camera.position = position
+		
+		if !move_dir: possessed_by.decrease_energy(delta * possessed_by.energy_idle)
+		else: possessed_by.decrease_energy(delta * possessed_by.energy_move)
+			
 
 
 func _on_npc_input_event(viewport, event, shape_idx):
