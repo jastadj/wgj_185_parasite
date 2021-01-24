@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://scenes/levels/level01.gd" type="Script" id=3]
+[ext_resource path="res://objects/actors/npc/npc.tscn" type="PackedScene" id=4]
+
+[node name="level" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 467.953, 255.085 )
+scale = Vector2( 7.11327, 5.70108 )
+texture = ExtResource( 2 )
+
+[node name="npc" parent="." instance=ExtResource( 4 )]
+position = Vector2( 618.181, 389.966 )
+
+[node name="start_position" type="Node2D" parent="."]
+position = Vector2( 789.131, 473.762 )
